@@ -13,7 +13,20 @@
 		22176C2A1F92DE060016C0CC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 22176C291F92DE060016C0CC /* Assets.xcassets */; };
 		22176C2D1F92DE060016C0CC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 22176C2B1F92DE060016C0CC /* LaunchScreen.storyboard */; };
 		22176C381F92E4F40016C0CC /* CategoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22176C371F92E4F40016C0CC /* CategoryCell.swift */; };
+		2293D0C01F93E3CD0008B224 /* coder_swagTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2293D0BF1F93E3CD0008B224 /* coder_swagTests.swift */; };
+		2293D0C81F93E46A0008B224 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2293D0C71F93E46A0008B224 /* Category.swift */; };
+		2293D0CB1F93E6440008B224 /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2293D0CA1F93E6440008B224 /* DataService.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2293D0C21F93E3CE0008B224 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 22176C171F92DE060016C0CC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 22176C1E1F92DE060016C0CC;
+			remoteInfo = "coder-swag";
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		22176C1F1F92DE060016C0CC /* coder-swag.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "coder-swag.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -24,10 +37,22 @@
 		22176C2C1F92DE060016C0CC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		22176C2E1F92DE060016C0CC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		22176C371F92E4F40016C0CC /* CategoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCell.swift; sourceTree = "<group>"; };
+		2293D0BD1F93E3CD0008B224 /* coder-swagTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "coder-swagTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2293D0BF1F93E3CD0008B224 /* coder_swagTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = coder_swagTests.swift; sourceTree = "<group>"; };
+		2293D0C11F93E3CE0008B224 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2293D0C71F93E46A0008B224 /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
+		2293D0CA1F93E6440008B224 /* DataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		22176C1C1F92DE060016C0CC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2293D0BA1F93E3CD0008B224 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -41,6 +66,7 @@
 			isa = PBXGroup;
 			children = (
 				22176C211F92DE060016C0CC /* coder-swag */,
+				2293D0BE1F93E3CD0008B224 /* coder-swagTests */,
 				22176C201F92DE060016C0CC /* Products */,
 			);
 			sourceTree = "<group>";
@@ -49,6 +75,7 @@
 			isa = PBXGroup;
 			children = (
 				22176C1F1F92DE060016C0CC /* coder-swag.app */,
+				2293D0BD1F93E3CD0008B224 /* coder-swagTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -56,6 +83,7 @@
 		22176C211F92DE060016C0CC /* coder-swag */ = {
 			isa = PBXGroup;
 			children = (
+				2293D0C91F93E5E60008B224 /* Services */,
 				22176C361F92E4690016C0CC /* Model */,
 				22176C351F92E45D0016C0CC /* View */,
 				22176C341F92E44C0016C0CC /* Controller */,
@@ -87,8 +115,26 @@
 		22176C361F92E4690016C0CC /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				2293D0C71F93E46A0008B224 /* Category.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		2293D0BE1F93E3CD0008B224 /* coder-swagTests */ = {
+			isa = PBXGroup;
+			children = (
+				2293D0BF1F93E3CD0008B224 /* coder_swagTests.swift */,
+				2293D0C11F93E3CE0008B224 /* Info.plist */,
+			);
+			path = "coder-swagTests";
+			sourceTree = "<group>";
+		};
+		2293D0C91F93E5E60008B224 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				2293D0CA1F93E6440008B224 /* DataService.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -111,6 +157,24 @@
 			productReference = 22176C1F1F92DE060016C0CC /* coder-swag.app */;
 			productType = "com.apple.product-type.application";
 		};
+		2293D0BC1F93E3CD0008B224 /* coder-swagTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2293D0C61F93E3CE0008B224 /* Build configuration list for PBXNativeTarget "coder-swagTests" */;
+			buildPhases = (
+				2293D0B91F93E3CD0008B224 /* Sources */,
+				2293D0BA1F93E3CD0008B224 /* Frameworks */,
+				2293D0BB1F93E3CD0008B224 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2293D0C31F93E3CE0008B224 /* PBXTargetDependency */,
+			);
+			name = "coder-swagTests";
+			productName = "coder-swagTests";
+			productReference = 2293D0BD1F93E3CD0008B224 /* coder-swagTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -124,6 +188,11 @@
 					22176C1E1F92DE060016C0CC = {
 						CreatedOnToolsVersion = 9.0;
 						ProvisioningStyle = Automatic;
+					};
+					2293D0BC1F93E3CD0008B224 = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 22176C1E1F92DE060016C0CC;
 					};
 				};
 			};
@@ -141,6 +210,7 @@
 			projectRoot = "";
 			targets = (
 				22176C1E1F92DE060016C0CC /* coder-swag */,
+				2293D0BC1F93E3CD0008B224 /* coder-swagTests */,
 			);
 		};
 /* End PBXProject section */
@@ -156,6 +226,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		2293D0BB1F93E3CD0008B224 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -166,10 +243,28 @@
 				22176C251F92DE060016C0CC /* CategoriesVC.swift in Sources */,
 				22176C231F92DE060016C0CC /* AppDelegate.swift in Sources */,
 				22176C381F92E4F40016C0CC /* CategoryCell.swift in Sources */,
+				2293D0C81F93E46A0008B224 /* Category.swift in Sources */,
+				2293D0CB1F93E6440008B224 /* DataService.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2293D0B91F93E3CD0008B224 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2293D0C01F93E3CD0008B224 /* coder_swagTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2293D0C31F93E3CE0008B224 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 22176C1E1F92DE060016C0CC /* coder-swag */;
+			targetProxy = 2293D0C21F93E3CE0008B224 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		22176C261F92DE060016C0CC /* Main.storyboard */ = {
@@ -328,6 +423,38 @@
 			};
 			name = Release;
 		};
+		2293D0C41F93E3CE0008B224 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = WAGE5TVG55;
+				INFOPLIST_FILE = "coder-swagTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.xantesfabela.coder-swagTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/coder-swag.app/coder-swag";
+			};
+			name = Debug;
+		};
+		2293D0C51F93E3CE0008B224 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = WAGE5TVG55;
+				INFOPLIST_FILE = "coder-swagTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.xantesfabela.coder-swagTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/coder-swag.app/coder-swag";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -345,6 +472,15 @@
 			buildConfigurations = (
 				22176C321F92DE060016C0CC /* Debug */,
 				22176C331F92DE060016C0CC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2293D0C61F93E3CE0008B224 /* Build configuration list for PBXNativeTarget "coder-swagTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2293D0C41F93E3CE0008B224 /* Debug */,
+				2293D0C51F93E3CE0008B224 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
